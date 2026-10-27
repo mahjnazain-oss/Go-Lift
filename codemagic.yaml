@@ -1,15 +1,1 @@
-workflows:
-  golift-ios:
-    name: GoLift iOS
-    max_build_duration: 60
-    instance_type: mac_mini_m2
-    environment:
-      flutter: stable
-      xcode: latest
-    scripts:
-      - name: Get Flutter packages
-        script: flutter pub get
-      - name: Build iOS app
-        script: flutter build ios --release --no-codesign
-    artifacts:
-      - build/ios/iphoneos/*.app
+git add .
